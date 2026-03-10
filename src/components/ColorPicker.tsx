@@ -11,7 +11,7 @@ type ColorPickerProps = {
 
 export default function ColorPicker({ setColor, color, colors }: ColorPickerProps) {
     return (
-        <select className="border p-2 mt-2"
+        <select className="border p-2 mt-2 bg-white"
         value={color}
         onChange={(e) => setColor(e.target.value)}>
             {colors.map((col) => (
